@@ -1,0 +1,19 @@
+{
+  "key.category.commandkeybinds.main": "Command Keybinds",
+  "key.commandkeybinds.open_editor": "Open Command Editor",
+  "screen.commandkeybinds.title": "Command Keybinds",
+  "screen.commandkeybinds.hint": "Type a command (with /) for each slot. Set the keys in Options > Controls > Key Binds.",
+  "screen.commandkeybinds.placeholder": "/command",
+  "key.commandkeybinds.slot_1": "Run Command 1",
+  "key.commandkeybinds.slot_2": "Run Command 2",
+  "key.commandkeybinds.slot_3": "Run Command 3",
+  "key.commandkeybinds.slot_4": "Run Command 4",
+  "key.commandkeybinds.slot_5": "Run Command 5",
+  "key.commandkeybinds.slot_6": "Run Command 6",
+  "key.commandkeybinds.slot_7": "Run Command 7",
+  "key.commandkeybinds.slot_8": "Run Command 8",
+  "key.commandkeybinds.slot_9": "Run Command 9",
+  "key.commandkeybinds.slot_10": "Run Command 10",
+  "key.commandkeybinds.slot_11": "Run Command 11",
+  "key.commandkeybinds.slot_12": "Run Command 12"
+}

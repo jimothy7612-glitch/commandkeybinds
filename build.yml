@@ -1,0 +1,25 @@
+name: build
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+      - name: Put files in their folders
+        run: |
+          mkdir -p src/client/java/com/example/commandkeybinds src/main/resources/assets/commandkeybinds/lang gradle/wrapper
+          mv *.java src/client/java/com/example/commandkeybinds/
+          mv fabric.mod.json src/main/resources/
+          mv en_us.json src/main/resources/assets/commandkeybinds/lang/
+          mv gradle-wrapper.jar gradle-wrapper.properties gradle/wrapper/
+      - run: chmod +x gradlew && ./gradlew build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: commandkeybinds-jar
+          path: build/libs/commandkeybinds-1.0.0.jar

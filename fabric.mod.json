@@ -1,0 +1,19 @@
+{
+	"schemaVersion": 1,
+	"id": "commandkeybinds",
+	"version": "${version}",
+	"name": "Command Keybinds",
+	"description": "Bind commands to keys. Press K to set commands, set keys in Controls.",
+	"authors": ["You"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.example.commandkeybinds.CommandKeybindsClient"]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
